@@ -83,7 +83,8 @@
   #endif
 #endif
 #ifndef FAN_PIN
-  #define FAN_PIN                          P2_03
+  // Ignace 2020 06 17 commented line below as test to remove all fan related stuff
+  //#define FAN_PIN                          P2_03
 #endif
 #ifndef HEATER_BED_PIN
   #define HEATER_BED_PIN                   P2_05

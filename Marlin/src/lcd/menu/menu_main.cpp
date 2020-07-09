@@ -48,6 +48,7 @@
 
 void menu_tune();
 void menu_motion();
+// Ignace 2020 06 17 commenting below to remove temperature menu altogether doesn't work.  So I left it
 void menu_temperature();
 void menu_configuration();
 
@@ -152,7 +153,8 @@ void menu_main() {
     SUBMENU(MSG_CUTTER(MENU), menu_spindle_laser);
   #endif
 
-  SUBMENU(MSG_TEMPERATURE, menu_temperature);
+  // Ignace 2020 06 17 comment part below out to remove temp menu
+  //SUBMENU(MSG_TEMPERATURE, menu_temperature);
 
   #if ENABLED(MIXING_EXTRUDER)
     SUBMENU(MSG_MIXER, menu_mixer);

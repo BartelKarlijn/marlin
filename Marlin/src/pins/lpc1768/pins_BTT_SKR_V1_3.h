@@ -124,6 +124,30 @@
   #define Z_CS_PIN                         P1_10
 #endif
 
+// Ignace: as TT explained: Move E0 out of the wayto an (unused) pin, and shuffle other extruders down
+// Ignace 2020 06 09 Moved all E0 pins to P2_05 (=heated bed)
+// original values
+// #define E0_STEP_PIN                        P2_13
+// #define E0_DIR_PIN                         P0_11
+// #define E0_ENABLE_PIN                      P2_12
+// #ifndef E0_CS_PIN
+//   #define E0_CS_PIN                        P1_08
+// #endif
+
+// #ifndef E1_CS_PIN
+//   #define E1_CS_PIN                        P1_01
+// #endif
+
+// Ignace 2020 06 09 : I guess it's OK to move all to same pin for dummy E0.  Others seem to do the same
+// #define E0_STEP_PIN                        P2_05
+// #define E0_DIR_PIN                         P2_05
+// #define E0_ENABLE_PIN                      P2_05
+// #ifndef E0_CS_PIN
+//   #define E0_CS_PIN                        P2_05
+// #endif
+
+// Ignace 2020 06 09 Used the original E0 values for E1
+// Ignace 2020 06 09 Reverted changes and kept like original values: E0=E0, what should work with EXTRUDERS=0
 #define E0_STEP_PIN                        P2_13
 #define E0_DIR_PIN                         P0_11
 #define E0_ENABLE_PIN                      P2_12
@@ -131,9 +155,15 @@
   #define E0_CS_PIN                        P1_08
 #endif
 
+// Ignace 2020 06 09 Added extra E2 pins
+// Ignace 2020 06 09 Switched these pins to E1 as it should be.
+#define E1_STEP_PIN                        P0_01
+#define E1_DIR_PIN                         P0_00
+#define E1_ENABLE_PIN                      P0_10
 #ifndef E1_CS_PIN
   #define E1_CS_PIN                        P1_01
 #endif
+
 
 //
 // Software SPI pins for TMC2130 stepper drivers
