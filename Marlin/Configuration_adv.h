@@ -2317,7 +2317,8 @@
    */
   // Ignace 2020 06 15 : to implement later on?
   // Ignace 2020 07 29 : set X, Y threshold to 14mm/sec.  Default was 100.  No change on Z
-  //#define HYBRID_THRESHOLD
+  // Ignace 2020 07 29 : uncommented below to enable hybrid threshold
+  #define HYBRID_THRESHOLD
 
   #define X_HYBRID_THRESHOLD     14  // [mm/s]
   #define X2_HYBRID_THRESHOLD    100
