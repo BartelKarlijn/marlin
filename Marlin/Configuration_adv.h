@@ -3226,7 +3226,7 @@
   #define CUSTOM_USER_MENU_TITLE "Custom Commands"
   #define USER_SCRIPT_DONE "M117 User Script Done"
   #define USER_SCRIPT_AUDIBLE_FEEDBACK
-  //#define USER_SCRIPT_RETURN  // Return to status screen after a script
+  #define USER_SCRIPT_RETURN  // Return to status screen after a script
 
 // Ignace 2020 05 29 replaced (commented) block below by own block
 //  #define USER_DESC_1 "Home & UBL Info"
