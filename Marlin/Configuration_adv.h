@@ -2541,9 +2541,9 @@
     // Ignace 2020 06 14 Added Z and Z2 stall sensitivity
     // Ignace 2020 06 15 Updated values  disabled X2
     // Ignace 2020 07 14 As x steps were skipping, decreased sensitivity, also for Y axis
-    #define X_STALL_SENSITIVITY  50
+    #define X_STALL_SENSITIVITY  60
     #define X2_STALL_SENSITIVITY X_STALL_SENSITIVITY
-    #define Y_STALL_SENSITIVITY  70
+    #define Y_STALL_SENSITIVITY  90
     #define Y2_STALL_SENSITIVITY Y_STALL_SENSITIVITY
     //#define Z_STALL_SENSITIVITY  120
     //#define Z2_STALL_SENSITIVITY Z_STALL_SENSITIVITY

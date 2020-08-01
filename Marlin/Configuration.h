@@ -2008,7 +2008,7 @@
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // https://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
-// Ignace 2020 05 30 uncommented line below.  Remark: it could be that I have Anet_FULL_GRAPHICS_LCD
+// Ignace 2020 05 30 uncommented line below.  Remark: it could be that I have Anet_FULL_GRAPHICS_LCD.  This one works.
 #define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 
 //
