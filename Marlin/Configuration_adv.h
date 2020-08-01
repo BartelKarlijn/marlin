@@ -2489,14 +2489,15 @@
   // Ignace 2020 06 15 : to implement later on?
   // Ignace 2020 07 29 : set X, Y threshold to 14mm/sec.  Default was 100.  No change on Z
   // Ignace 2020 07 29 : uncommented below to enable hybrid threshold
+  // Ignace 2020 08 01 : hybrid threshold was interfering with sensorless homing.  Adjusted values to 50
   #define HYBRID_THRESHOLD
 
-  #define X_HYBRID_THRESHOLD     14  // [mm/s]
+  #define X_HYBRID_THRESHOLD     50  // [mm/s]
   #define X2_HYBRID_THRESHOLD    100
-  #define Y_HYBRID_THRESHOLD     14
-  #define Y2_HYBRID_THRESHOLD    14
-  #define Z_HYBRID_THRESHOLD       3
-  #define Z2_HYBRID_THRESHOLD      3
+  #define Y_HYBRID_THRESHOLD     50
+  #define Y2_HYBRID_THRESHOLD    50
+  #define Z_HYBRID_THRESHOLD     20
+  #define Z2_HYBRID_THRESHOLD    20
   #define Z3_HYBRID_THRESHOLD      3
   #define Z4_HYBRID_THRESHOLD      3
   #define E0_HYBRID_THRESHOLD     30
