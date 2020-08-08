@@ -807,7 +807,8 @@
 //#define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 10000 }
 // Ignace 2020 06 09 added 5th parameter (X, Y1, Z, Y2, Z2), and removed it again
 // Ignace 2020 06 10 modified to same value
-#define DEFAULT_MAX_ACCELERATION      { 400, 400, 400, 400 }
+// Ignace 2020 08 04 modified to lower values.
+#define DEFAULT_MAX_ACCELERATION      { 200, 200, 20, 200 }
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
 #if ENABLED(LIMITED_MAX_ACCEL_EDITING)
@@ -826,9 +827,11 @@
 //#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration for printing moves
 //#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration for retracts
 //#define DEFAULT_TRAVEL_ACCELERATION   3000    // X, Y, Z acceleration for travel (non printing) moves
-#define DEFAULT_ACCELERATION          400    // X, Y, Z and E acceleration for printing moves
+// Ignace 2020 08 04 modified to lower values.  To reach max 40mm/sec, it would take 1sec = 20mm movement with 80mm/sec2 accel.
+//                                              or 0.5sec = 10mm with 80mm/sec2 accel
+#define DEFAULT_ACCELERATION          80    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   400    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_TRAVEL_ACCELERATION   40    // X, Y, Z acceleration for travel (non printing) moves
 
 /**
  * Default Jerk limits (mm/s)
