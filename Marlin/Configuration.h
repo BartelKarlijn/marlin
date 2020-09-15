@@ -104,13 +104,15 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT 0
+// Ignace 2020 09 15 Set SerialPort to 3
+#define SERIAL_PORT 3
 
 /**
  * Select a secondary serial port on the board to use for communication with the host.
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-//#define SERIAL_PORT_2 -1
+// Ignace 2020 09 15 added 2nd serial port
+#define SERIAL_PORT_2 -1
 
 /**
  * This setting determines the communication speed of the printer.
