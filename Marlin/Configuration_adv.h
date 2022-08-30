@@ -732,8 +732,6 @@
 #endif
 
 /**
-=======
->>>>>>> upstream/2.1.x
  * Dual X Carriage
  *
  * This setup has two X carriages that can move independently, each with its own hotend.

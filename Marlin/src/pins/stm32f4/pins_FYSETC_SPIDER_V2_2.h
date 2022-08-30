@@ -21,6 +21,27 @@
  */
 #pragma once
 
+<<<<<<< HEAD:Marlin/src/lcd/extui/dgus_reloaded/DGUSSetupHandler.h
+namespace DGUSSetupHandler {
+
+  #if ENABLED(SDSUPPORT)
+    bool Print();
+  #endif
+  bool PrintStatus();
+  bool PrintAdjust();
+  bool LevelingMenu();
+  bool LevelingOffset();
+  bool LevelingManual();
+  bool LevelingAutomatic();
+  bool LevelingProbing();
+  bool Filament();
+  bool Move();
+  bool Gcode();
+  bool PID();
+  bool Infos();
+
+}
+=======
 #define BOARD_INFO_NAME "FYSETC SPIDER V22"
 #define DEFAULT_MACHINE_NAME BOARD_INFO_NAME
 
@@ -32,3 +53,4 @@
 #define FAN1_PIN                            PA14
 
 #include "pins_FYSETC_SPIDER.h"
+>>>>>>> upstream/bugfix-2.1.x:Marlin/src/pins/stm32f4/pins_FYSETC_SPIDER_V2_2.h
