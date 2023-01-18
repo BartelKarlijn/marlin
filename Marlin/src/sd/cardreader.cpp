@@ -330,15 +330,15 @@ void CardReader::printListing(SdFile parent,  const char * const prepend, const 
       SERIAL_CHAR(' ');
       SERIAL_ECHO(p.fileSize);
       if (includeTime) {
-    		SERIAL_CHAR(' ');
-    		uint16_t crmodDate = p.lastWriteDate, crmodTime = p.lastWriteTime;
-    		if (crmodDate < p.creationDate || (crmodDate == p.creationDate && crmodTime < p.creationTime)) {
-    			crmodDate = p.creationDate;
-    			crmodTime = p.creationTime;
-    		}
-    		SERIAL_ECHOPGM("0x", hex_word(crmodDate));
-    		print_hex_word(crmodTime);
-    	}
+        SERIAL_CHAR(' ');
+        uint16_t crmodDate = p.lastWriteDate, crmodTime = p.lastWriteTime;
+        if (crmodDate < p.creationDate || (crmodDate == p.creationDate && crmodTime < p.creationTime)) {
+          crmodDate = p.creationDate;
+          crmodTime = p.creationTime;
+        }
+        SERIAL_ECHOPGM("0x", hex_word(crmodDate));
+        print_hex_word(crmodTime);
+      }
       #if ENABLED(LONG_FILENAME_HOST_SUPPORT)
         if (includeLong) {
           SERIAL_CHAR(' ');
@@ -789,7 +789,7 @@ void CardReader::removeFile(const char * const name) {
 }
 
 void CardReader::report_status() {
-  if (isPrinting()) {
+  if (isPrinting() || isPaused()) {
     SERIAL_ECHOPGM(STR_SD_PRINTING_BYTE, sdpos);
     SERIAL_CHAR('/');
     SERIAL_ECHOLN(filesize);
