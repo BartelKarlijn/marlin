@@ -74,6 +74,7 @@ A core tenet of this project is to keep supporting 8-bit AVR boards while also m
 
 Proposed patches should be submitted as a Pull Request against the ([bugfix-2.1.x](https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.1.x)) branch.
 
+- This branch is for fixing bugs and integrating any new features for the duration of the Marlin 2.1.x life-cycle.
 - Follow the [Coding Standards](https://marlinfw.org/docs/development/coding_standards.html) to gain points with the maintainers.
 - Please submit Feature Requests and Bug Reports to the [Issue Queue](https://github.com/MarlinFirmware/Marlin/issues/new/choose). Support resources are also listed there.
 - Whenever you add new features, be sure to add tests to `buildroot/tests` and then run your tests locally, if possible.
